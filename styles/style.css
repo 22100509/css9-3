@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0e0e;
+  font-family: inter;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.MainWidth {
+  max-width: 840px;
+  width: 100%;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  display: flex;
+}
+
+nav {
+  max-width: fit-content;
+  width: 100%;
+}
+
+header {
+  padding: 16px 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.headreUl {
+  gap: 24px;
+  list-style-type: none;
+  color: #7b7b7b;
+  font-size: 16px;
+  display: flex;
+  max-width: 222px;
+  width: 100%;
+}
+
+li:hover {
+  color: #fff;
+}
+
+.burger {
+  display: none;
+}
+.Film {
+  font-size: 32px;
+  color: #fff;
+  max-width: fit-content;
+}
+
+.spanBox {
+  color: #a00;
+}
+
+.arlene {
+  max-width: fit-content;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  color: #fff;
+  font-size: 16px;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  display: flex;
+}
+
+.batmanSection {
+  background-image: url(/images/batman.png), url(/images/car.png);
+  display: flex;
+  padding: 40px 40px 30px 40px;
+  flex-direction: column;
+  gap: 91px;
+  width: 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right;
+  border-radius: 16px;
+}
+
+.batmanHeading {
+  gap: 8px;
+  display: flex;
+  justify-content: flex-start;
+  color: #7b7b7b;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.headBatman {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.imdb {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: fit-content;
+  width: 100%;
+  color: #7b7b7b;
+  font-size: 16px;
+}
+
+.fantasyDiv {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 355px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.fantasyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #7b7b7b;
+  font-size: 14px;
+  align-items: flex-start;
+}
+
+.fantasyP {
+  display: flex;
+  gap: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.Whatch {
+  border-radius: 8px 32px;
+  background: #a00;
+  padding: 12px 24px;
+  box-shadow: 5px 2px 11.9px 0px #a00;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+.reomendedSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  width: 100%;
+  max-width: 540px;
+  align-items: center;
+}
+
+.formDiv {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+ 
+}
+
+.inputDiv {
+  display: flex;
+  gap: 10px;
+  border-radius: 24px;
+  background: #191919;
+  padding: 8px 16px 8px 12px;
+  align-items: center;
+}
+
+.input {
+  background: none;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+.selectDiv {
+    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #191919;
+  padding: 8px 12px 8px 16px;
+  border: none;
+}
+
+select {
+  border: none;
+  color: #7b7b7b;
+  appearance: none;
+  background: none;
+  font-size: 16px;
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.cardsLine {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 192px;
+  height: 219px;
+  border-radius: 16px;
+  background-image: url(/images/image.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardTwo {
+  background-image: url(/images/image2.png);
+}
+.cardThree {
+  background-image: url(/images/image3.png);
+}
+.cardFour {
+  background-image: url(/images/image4.png);
+}
+.cardFive {
+  background-image: url(/images/devil.png);
+}
+.cardSix {
+  background-image: url(/images/image6.png);
+}
+.cardSeven {
+  background-image: url(/images/image7.png);
+}
+.cardEight {
+  background-image: url(/images/image23.png);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.card:hover::after {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.card button {
+  width: 135px;
+  height: 48px;
+  border: none;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px 32px;
+  background-color: #a00;
+  box-shadow: 5px 2px 11.9px 0px #a00;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+.card:hover button {
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainDiv {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    padding: 0 16px;
+   
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .batmanSection {
+    background-image: url(/images/car.png);
+    border-radius: 16px;
+    padding: 24px 8px 10px 16px;
+  }
+
+  .formDiv {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .inputDiv {
+    width: 100%;
+  }
+
+  .mccoy {
+    display: none;
+  }
+
+  .cardsLine {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: unset;
+    width: 100%;
+  }
+
+}
